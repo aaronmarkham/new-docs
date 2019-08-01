@@ -1,4 +1,4 @@
-Guide
+Tutorials
 =====
 
 Getting started

@@ -164,12 +164,6 @@ html_theme = 'mxtheme'
 html_theme_options = {
     'primary_color': 'blue',
     'accent_color': 'deep_orange',
-    'header_links' : [
-        ('Python', 'https://beta.mxnet.io', True, 'fab fa-python'),
-        ("R", "http://beta.mxnet.io/r/index.html", True, 'fab fa-r-project'),
-        ("GitHub", "https://github.com/apache/incubator-mxnet/", True, 'fab fa-github')
-    ],
-    # Render footer (Default: True)
     'show_footer': True
 }
 
@@ -183,7 +177,7 @@ html_theme_options = {
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = '_static/mxnet-logo.svg'
+html_logo = '_static/mxnet_logo.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -194,6 +188,14 @@ html_favicon = '_static/mxnet-icon.png'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = [
+    'mxnet.css',
+]
+
+html_js_files = [
+    'style.css',
+]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -225,10 +227,10 @@ html_sidebars = {
 #html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-#html_show_sphinx = True
+html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-#html_show_copyright = True
+html_show_copyright = False
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the
@@ -251,7 +253,5 @@ def setup(app):
     app.add_config_value('recommonmark_config', {
     }, True)
     app.add_javascript('google_analytics.js')
-    app.add_stylesheet('mxnet.css')
-
     import mxtheme
     app.add_directive('card', mxtheme.CardDirective)
