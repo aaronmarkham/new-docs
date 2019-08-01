@@ -154,7 +154,7 @@ suppress_warnings = [
 # -- Options for HTML output ---------------------------------------------------
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['mxtheme']
+html_theme_path = ['../../mxtheme']
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
