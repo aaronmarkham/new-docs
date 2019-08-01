@@ -36,6 +36,14 @@
     width: 100% !important;
 }
 
+.mx-card-title {
+    font-weight: 300 !important
+}
+
+.mx-card:hover .mx-card-title {
+    color: orangered !important;
+}
+
 .mdl-card:hover {
     box-shadow: inset 0 -2px 0 0 #048ccc !important;
 }
@@ -43,6 +51,11 @@
 .mdl-layout__header-row {
     height: 84px !important;
 }
+
+.mdl-shadow--2dp {
+    box-shadow: none !important;
+}
+
 
 div.mdl-layout__header-row.header-links {
     display: none !important;
@@ -63,6 +76,7 @@ div.mdl-layout__header-row.header-links {
 .mdl-layout-title {
     background-color: rgb(4,140,204);
 }
+
 
 .mdl-layout__drawer {
     box-shadow: none !important;
