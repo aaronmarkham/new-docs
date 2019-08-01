@@ -13,10 +13,6 @@
     .mdl-layout__drawer {
         width: 300px !important;
     }
-    .document {
-        height: 100%;
-        margin-bottom: -120px !important;        
-    }
 }
 
 .mdl-layout__header--waterfall.is-casting-shadow {
