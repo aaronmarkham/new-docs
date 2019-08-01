@@ -15,6 +15,10 @@
     }
 }
 
+.document .page-content {
+    padding: 0 10%; !important
+}
+
 .mdl-layout__header--waterfall.is-casting-shadow {
     box-shadow: none !important;
 }
@@ -65,10 +69,8 @@ div.mdl-layout__header-row.header-links {
     border: none !important;
 }
 
-
-
 .pagenation {
-    display: none !important;
+    visibility: hidden !important;
 }
 
 footer.mdl-mini-footer {
